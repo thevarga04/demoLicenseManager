@@ -1,0 +1,45 @@
+### Get All Partners
+GET http://localhost:9193/api/partners
+
+### Get a Partner
+GET http://localhost:9193/api/partners/1
+
+### Add a Partner A1
+POST http://localhost:9193/api/partners
+Content-Type: application/json
+
+{
+  "username": "a1",
+  "clients": [
+    {
+      "email": "john.doe@acme.com",
+      "phoneNumber": 911
+    }
+  ]
+}
+
+### Add a Partner Drei
+POST http://localhost:9193/api/partners
+Content-Type: application/json
+
+{
+  "username": "Drei"
+}
+
+### Add a Client
+PATCH http://localhost:9193/api/partners
+Content-Type: application/json
+
+{
+  "id": 2,
+  "clients": [
+    {
+      "email": "john.doe@acme.com",
+      "phoneNumber": 911
+    },
+    {
+      "email": "jane.doe@acme.com",
+      "phoneNumber": 912
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<plugin>
+    <groupId>org.openapitools</groupId>
+    <artifactId>openapi-generator-maven-plugin</artifactId>
+
+    <configOptions>
+        <useSpringBoot3>true</useSpringBoot3>
+        <useJakartaEe>true</useJakartaEe>
+        <delegatePattern>true</delegatePattern>
+        <performBeanValidation>true</performBeanValidation>
+        <useBeanValidation>true</useBeanValidation>

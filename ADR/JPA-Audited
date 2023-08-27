@@ -1,0 +1,3 @@
+# @Audited
+# entity extends AbstractAuditable
+# ...
