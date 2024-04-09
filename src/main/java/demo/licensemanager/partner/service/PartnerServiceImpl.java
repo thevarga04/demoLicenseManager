@@ -8,12 +8,11 @@ import demo.licensemanager.partner.model.Partner;
 import demo.licensemanager.partner.model.PatchPartner;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.ValidationException;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service
 @Transactional
@@ -60,8 +59,6 @@ public class PartnerServiceImpl implements PartnerService {
     } else {
       jpaPartner.getClients().addAll(jpaClientList);
     }
-
-    partnerRepo.save(jpaPartner);
   }
 
 
